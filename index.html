@@ -1,8 +1,18 @@
 <html ng-app="app">
-<body>
+    <head>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+<body style="margin: 100px">
+
     <div ng-controller="homeController as vm">
         {{vm.title}}
+        <br>    
+        <br>
+        <button type="button" ng-click="vm.incrementClikCount();"  class="btn btn-success">You clicked {{vm.clickCount}} times</button>
     </div>
+    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>    
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
 </body>
